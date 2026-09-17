@@ -1,0 +1,39 @@
+{
+  "admin": { "email": "admin@escola.com", "senha": "admin123" },
+  "loginsInvalidos": [
+    {
+      "nome": "senha incorreta",
+      "credenciais": { "email": "admin@escola.com", "senha": "senha-incorreta" },
+      "status": 401,
+      "erro": "E-mail ou senha inválidos."
+    },
+    {
+      "nome": "usuário inexistente",
+      "credenciais": { "email": "inexistente@example.com", "senha": "123456" },
+      "status": 401,
+      "erro": "E-mail ou senha inválidos."
+    },
+    {
+      "nome": "senha ausente",
+      "credenciais": { "email": "admin@escola.com" },
+      "status": 400,
+      "erro": "Os campos \"email\" e \"senha\" são obrigatórios."
+    }
+  ],
+  "entregas": [
+    {
+      "nome": "exercícios de matemática",
+      "aluno": { "nome": "Lucas Teste", "email": "lucas.teste@example.com", "matricula": "TEST001", "senha": "Aluno123!" },
+      "disciplinaId": "disciplina-matematica",
+      "trabalho": { "titulo": "Lista de exercícios", "descricao": "Resolução dos exercícios de álgebra." },
+      "statusEsperado": "entregue"
+    },
+    {
+      "nome": "programação sem descrição opcional",
+      "aluno": { "nome": "Marina Teste", "email": "marina.teste@example.com", "matricula": "TEST002", "senha": "Marina123!" },
+      "disciplinaId": "disciplina-programacao-web",
+      "trabalho": { "titulo": "Página de cadastro" },
+      "statusEsperado": "entregue"
+    }
+  ]
+}
